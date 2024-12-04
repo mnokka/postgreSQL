@@ -1,0 +1,25 @@
+# Use postgres/example user/password credentials
+version: '3.9'
+
+services:
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    container_name: testipossu
+    environment:
+      POSTGRES_USER: mika        # Create user 'mika'
+      POSTGRES_PASSWORD: passu   # Set password for 'mika'
+      POSTGRES_DB: cars          # Create database 'cars'
+    volumes:
+      - /home/mika/DOCKERDATA:/var/lib/postgresql/data # Mount host directory to container
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8100:8080 # Map port 8080 in the container to port 8100 on the host
+
