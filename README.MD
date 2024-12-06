@@ -2,7 +2,8 @@ POC for PostgreSQL database running in docker
 <br>
 <br>
 Uses Docker host volume mapping in : /home/mika/DOCKERDATA
-Uses Docker backups mapping /DOCKERBACKUPS
+
+Uses Docker backups mapping: /DOCKERBACKUPS
 <br>
 <br>
 
