@@ -15,7 +15,8 @@ services:
       POSTGRES_PASSWORD: passu   
       POSTGRES_DB: cars         
     volumes:
-      - /home/mika/DOCKERDATA:/var/lib/postgresql/data # Mount host directory to container
+      - /home/mika/DOCKERDATA:/var/lib/postgresql/data 
+      - /home/mika/DOCKERBACKUPS:/BACKUPS
 
   adminer:
     image: adminer
