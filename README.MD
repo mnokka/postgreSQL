@@ -30,3 +30,8 @@ Take timestampped db backup:
 
 Return backup:
 ./returnbackup.sh
+
+----------------------------------------------------
+
+Open SQL shell into Docker:
+sudo docker exec -it -u postgres testipossu psql -U mika -d cars
