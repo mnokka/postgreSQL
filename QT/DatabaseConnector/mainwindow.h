@@ -6,6 +6,9 @@
 #include <QtWidgets>
 #include <QMenuBar>
 #include <QMenu>
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
 
 class MainWindow : public QMainWindow
 {
@@ -19,6 +22,7 @@ private:
     QMenu *aboutMenu;
     QAction *aboutAct;
     void createMenus();
+    void showDatabaseInfo();
 
 private slots:
     void about();

@@ -17,6 +17,8 @@ services:
     volumes:
       - /home/mika/DOCKERDATA:/var/lib/postgresql/data 
       - /home/mika/DOCKERBACKUPS:/BACKUPS
+    ports:
+      - "5432:5432" 
 
   adminer:
     image: adminer

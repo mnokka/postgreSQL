@@ -35,3 +35,11 @@ Return backup:
 
 Open SQL shell into Docker:
 sudo docker exec -it -u postgres testipossu psql -U mika -d cars
+
+
+------------------------------------------
+QT directory includes small Qt(5.15) app to "access" database (showing SELECT * FROM cars;)
+
+Qt Postgres may require driver installation:
+
+sudo apt-get install libqt5sql5-psql libpq-dev
